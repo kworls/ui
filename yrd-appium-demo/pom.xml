@@ -11,5 +11,14 @@
 
     <artifactId>appium</artifactId>
 
+    <dependencies>
+    <dependency>
+        <groupId>com.yrd.qa</groupId>
+        <artifactId>common</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <scope>provided</scope>
+    </dependency>
+    </dependencies>
+
 
 </project>

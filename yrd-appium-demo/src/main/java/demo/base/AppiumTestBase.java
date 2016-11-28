@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeMethod;
 
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
+import main.java.config.AppiumConfig;
 
 
 /**
