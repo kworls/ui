@@ -26,13 +26,13 @@ public class InitAppium {
     //调试设备系统版本
     public static String platformVersion = "4.4.2";
     //app路径
-    public static String appPath = System.getProperty("user.dir") + "/yrd-appium-demo/app/4.apk";
+    public static String appPath = System.getProperty("user.dir") + "/app/154.apk";
 
     //包名
     public static String appPackage = "com.creditwealth.client";
 
     //是否需要重新安装
-    public static String noReset = "False";
+    public static String noReset = "True";
 
     //是否不重新签名
     public static String noSign = "True";
@@ -82,6 +82,7 @@ public class InitAppium {
         capabilities.setCapability("platformVersion", platformVersion);
         capabilities.setCapability("app", new File(appPath).getAbsolutePath());
         capabilities.setCapability("appPackage", appPackage);
+        capabilities.setCapability("udid", "M9N7N15C28000162");
         //支持中文
         capabilities.setCapability("unicodeKeyboard", unicodeKeyboard);
         //运行完毕之后，变回系统的输入法

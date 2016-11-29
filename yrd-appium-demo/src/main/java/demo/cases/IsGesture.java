@@ -11,8 +11,9 @@ import org.testng.annotations.Test;
 public class IsGesture extends InitAppium {
 
     @Test
-    public void isGesture(){
+    public void isGesture() throws InterruptedException {
         Assert.assertNull(null);
+        driver.manage().wait(10000);
 
 }
 }
