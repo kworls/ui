@@ -557,6 +557,7 @@ public class OperateAppium {
      */
     public int getScreenWidth() {
         return driver.manage().window().getSize().getWidth();
+//        return  driver.manage().window().getSize().width;
     }
 
     /**
@@ -566,6 +567,8 @@ public class OperateAppium {
      */
     public int getScreenHeight() {
         return driver.manage().window().getSize().getHeight();
+//        return  driver.manage().window().getSize().height;
+
     }
 
 
@@ -586,5 +589,7 @@ public class OperateAppium {
     }
 
 
-
 }
+
+
+

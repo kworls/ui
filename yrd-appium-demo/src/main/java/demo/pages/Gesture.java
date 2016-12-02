@@ -17,6 +17,7 @@ public class Gesture extends PageAppium {
      */
 
 
+
     //TextView 输入手势密码解锁 com.creditwealth.client:id/tv_tips
     public final String TV_TIPS = "tv_tips";
 
@@ -30,7 +31,7 @@ public class Gesture extends PageAppium {
      * 判断是否在本页
     */
     public boolean isThisPage(){
-        return isIdElementExist(TV_TIPS,3,true);
+        return isIdElementExist(TV_TIPS,4);
     }
 
     /**
