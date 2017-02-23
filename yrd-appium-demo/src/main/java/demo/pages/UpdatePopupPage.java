@@ -1,16 +1,19 @@
 package main.java.demo.pages;
 
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.AndroidElement;
 import main.java.base.Page;
 
 /**
  * Created by Administrator on 2016/12/2.
+ * 升级提示页面
  */
 public class UpdatePopupPage extends Page{
 
     public UpdatePopupPage(AndroidDriver androidDriver) {
         super(androidDriver);
     }
+
 
     //退出按钮 com.creditwealth.client:id/iv_update_quit
     public final String QUIT="iv_update_quit";
@@ -20,6 +23,12 @@ public class UpdatePopupPage extends Page{
     public final String TEXTV1="";
     //升级按钮 com.creditwealth.client:id/bt_update_start
     public final String BUTTON_UPDATE="bt_update_start";
+
+
+    public AndroidElement getQUIT(){
+        return  this.findById(QUIT);
+    }
+
 
 
 }

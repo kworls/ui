@@ -1,12 +1,12 @@
 package main.java.demo.pages;
 
 import io.appium.java_client.android.AndroidDriver;
-import main.java.demo.base.PageAppium;
+import main.java.base.Page;
 
 /**
  * Created by Administrator on 2016/11/29.
  */
-public class FrontPage extends PageAppium{
+public class FrontPage extends Page{
     public FrontPage(AndroidDriver driver){
         super(driver);
     }

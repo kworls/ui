@@ -1,4 +1,4 @@
-package main.java.demo.base;
+package main.java.base;
 
 import com.google.common.base.Function;
 import io.appium.java_client.android.AndroidDriver;

@@ -2,13 +2,14 @@ package main.java.demo.operation;
 
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
-import main.java.demo.base.OperateAppium;
+import main.java.base.Operation;
 import main.java.demo.pages.Gesture;
+
 
 /**
  * Created by Administrator on 2016/11/29.
  */
-public class GestureOperation extends OperateAppium {
+public class GestureOperation extends Operation {
 
     private Gesture gesture;
     AndroidDriver driver;
@@ -19,7 +20,7 @@ public class GestureOperation extends OperateAppium {
 
     }
 
-    /** 页面验证 */
+    /** 本页面验证 */
     public boolean isTisPage(){
         return gesture.isThisPage();
     }
@@ -69,7 +70,7 @@ public class GestureOperation extends OperateAppium {
 }
 
 /** 手势验证 点 类 */
-class Point extends OperateAppium{
+class Point extends Operation{
 
     AndroidDriver driver;
 
@@ -109,7 +110,7 @@ class Point extends OperateAppium{
 
         int w=0;
         int h=0;
-        OperateAppium oa=new OperateAppium(driver);
+        Operation oa=new Operation(driver);
         Point point =new Point(driver);
         w = oa.getScreenWidth();
         h = oa.getScreenHeight();

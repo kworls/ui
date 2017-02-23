@@ -8,6 +8,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Listeners;
 
 import java.io.File;
 import java.net.MalformedURLException;
@@ -15,14 +16,14 @@ import java.net.URL;
 
 /**
  * 测试用例的父类
- * Created by LITP on 2016/9/7.
+ * Created by Adminstrator on 2016/12/7.
  */
-//@Listeners({com.example.base.AssertionListener.class})
+//@Listeners({main.java.util.AssertionListener.class})
 public class InitAppium {
     //调试设备名字
     public static String deviceName = "Android Emulator";
     //调试设备系统版本
-    public static String platformVersion = "4.4.2";
+    public static String platformVersion = "6.0";
     //app路径
     public static String appPath = System.getProperty("user.dir") + "/app/154.apk";
 
@@ -82,7 +83,7 @@ public class InitAppium {
         capabilities.setCapability("appPackage", appPackage);
         capabilities.setCapability("udid", "M9N7N15C28000162");
         //支持中文
-        capabilities.setCapability("unicodeKeyboard", unicodeKeyboard);
+//        capabilities.setCapability("unicodeKeyboard", unicodeKeyboard);
         //运行完毕之后，变回系统的输入法
         capabilities.setCapability("resetKeyboard", resetKeyboard);
         //不重复安装

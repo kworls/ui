@@ -2,12 +2,13 @@ package main.java.demo.pages;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
-import main.java.demo.base.PageAppium;
+import main.java.base.Page;
 
 /**
  * Created by Administrator on 2016/11/29.
+ * 解锁页面
  */
-public class Gesture extends PageAppium {
+public class Gesture extends Page {
     public Gesture(AndroidDriver driver){
         super(driver);
     }
